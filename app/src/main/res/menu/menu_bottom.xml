@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cnb_unselectedColor="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_main_home_white"
+        app:cnb_backgroundColor="@color/background_activity_menu_color"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff" />
+
+    <item
+        android:id="@+id/recipes"
+        android:title="Recipes"
+        android:icon="@drawable/ic_main_recipes_white"
+        app:cnb_backgroundColor="@color/background_activity_menu_color"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff" />
+
+    <item
+        android:id="@+id/recycle"
+        android:title="Recycle"
+        android:icon="@drawable/ic_main_recycle_white"
+        app:cnb_backgroundColor="@color/background_activity_menu_color"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff" />
+</menu>
