@@ -41,4 +41,10 @@ dependencies {
     //chip navigation bar
     implementation 'com.github.ismaeldivita:chip-navigation-bar:1.4.0'
 
+
+    //for viewpager and tabview
+    implementation 'androidx.viewpager2:viewpager2:1.1.0-beta01'
+    implementation 'androidx.fragment:fragment-ktx:1.6.0-alpha04'
+    implementation 'com.google.android.material:material:1.8.0-alpha03'
+
 }

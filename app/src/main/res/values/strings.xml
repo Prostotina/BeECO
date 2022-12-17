@@ -1,5 +1,10 @@
 <resources>
-    <string name="app_name">EcoApp</string>
+    <string name="app_name">BeECO</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_hint_paper">Бумага</string>
+    <string name="image_hint_glass">Стекло</string>
+    <string name="image_hint_metal">Металл</string>
+    <string name="image_hint_plastic">Пластик</string>
+    <string name="image_button_settings">Настройки</string>
 </resources>

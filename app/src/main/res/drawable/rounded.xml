@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/background_menu_color"/>
-        <corners
+
+    <solid
+        android:color="@color/background_menu_color"/>
+
+    <corners
             android:topLeftRadius="24dp"
             android:topRightRadius="24dp"/>
+
+    <stroke
+        android:color="@color/main_text_color"
+        android:dashWidth="15px"
+        android:dashGap="0px"
+        android:width="1dp"/>
 
 </shape>

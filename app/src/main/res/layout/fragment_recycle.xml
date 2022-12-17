@@ -1,18 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout_recycle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9C27B0"
-    tools:context=".RecycleFragment">
+    android:background="@color/background_color"
+    tools:context=".menuTabs.RecycleFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="267dp"
+        android:layout_marginBottom="-30dp"
+        android:src="@drawable/people"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonGlass"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="26sp"
-        android:textColor="@color/white"
-        android:text="Recycle" />
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/recycle_rounded_green_button"
+        android:contentDescription="@string/image_hint_glass"
+        android:elevation="15dp"
+        android:onClick="onClickGlassRecycle"
+        android:src="@drawable/ic_rec_glass"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonPaper"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonMetal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</RelativeLayout>
+    <ImageButton
+        android:id="@+id/imageButtonMetal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/recycle_rounded_green_button"
+        android:contentDescription="@string/image_hint_metal"
+        android:elevation="15dp"
+        android:onClick="onClickMetalRecycle"
+        android:src="@drawable/ic_rec_metal"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonPlastic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonGlass"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPaper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/recycle_rounded_green_button"
+        android:contentDescription="@string/image_hint_paper"
+        android:elevation="15dp"
+        android:onClick="onClickPaperRecycle"
+        android:src="@drawable/ic_rec_paper"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonPlastic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonGlass" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPlastic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/recycle_rounded_green_button"
+        android:contentDescription="@string/image_hint_plastic"
+        android:elevation="15dp"
+        android:onClick="onClickPlasticRecycle"
+        android:src="@drawable/ic_rec_plastic"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonPaper"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonMetal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

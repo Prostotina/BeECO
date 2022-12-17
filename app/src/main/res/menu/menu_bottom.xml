@@ -5,24 +5,24 @@
 
     <item
         android:id="@+id/home"
-        android:title="Home"
         android:icon="@drawable/ic_main_home_white"
+        android:title="Главная"
         app:cnb_backgroundColor="@color/background_activity_menu_color"
         app:cnb_iconColor="#fff"
         app:cnb_textColor="#fff" />
 
     <item
         android:id="@+id/recipes"
-        android:title="Recipes"
         android:icon="@drawable/ic_main_recipes_white"
+        android:title="Еда"
         app:cnb_backgroundColor="@color/background_activity_menu_color"
         app:cnb_iconColor="#fff"
         app:cnb_textColor="#fff" />
 
     <item
         android:id="@+id/recycle"
-        android:title="Recycle"
         android:icon="@drawable/ic_main_recycle_white"
+        android:title="Крафт"
         app:cnb_backgroundColor="@color/background_activity_menu_color"
         app:cnb_iconColor="#fff"
         app:cnb_textColor="#fff" />

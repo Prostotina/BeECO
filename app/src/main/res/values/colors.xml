@@ -7,8 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
     <color name="background_menu_color">#A3D378</color>
     <color name="background_activity_menu_color">#89C752</color>
-
+    <color name="main_text_color">#57872C</color>
+    <color name="text_color">#6FAD38</color>
+    <color name="stroke_color">#4F8941</color>
+    <color name="background_color">#FFFFFF</color>
+    <color name="card_color">#80D5DAD6</color>
+    <color name="grey_color">#EDEDED</color>
 
 </resources>
